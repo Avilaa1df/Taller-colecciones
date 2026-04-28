@@ -12,6 +12,7 @@ public class ListaTareas {
         int opcion;
 
         do{
+            System.out.println("----- Lista de Tareas -----");
             System.out.println("1. Agregar Tarea ");
             System.out.println("2. Mostrar tareas disponibles ");
             System.out.println("3. Marcar tarea como completada ");
@@ -27,6 +28,7 @@ public class ListaTareas {
                     System.out.println("Ingrese el nombre de la tarea: ");
                     Nuevatarea = entrada.nextLine();
                     listaDeTareas.add(Nuevatarea);
+                    System.out.println("✅ Tarea agregada correctamente.");
                     System.out.println("---------------");
                     break;
 
@@ -42,6 +44,7 @@ public class ListaTareas {
                     System.out.println("Ingrese el nombre exacto de la tarea que desea marcar como completada: ");
                     tareaCompletada = entrada.nextLine();
                     listaDeTareas.remove(tareaCompletada);
+                    System.out.println("✅ Tarea completada.");
                     System.out.println("---------------");
                     break;
 
